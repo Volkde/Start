@@ -1,8 +1,8 @@
 package lesson_16;
 
 public class MagicArray {
-    int[] array;
-    int cursor; // присвоено значение по умолчанию = 0;
+    private int[] array;
+    private int cursor; // присвоено значение по умолчанию = 0;
 
     public MagicArray() {
         array = new int[10];
@@ -34,7 +34,7 @@ public class MagicArray {
 
 
     // Динамическое расширение массива
-    void expandArray() {
+    private void expandArray() {
         System.out.println("Расширяем массив! Курсор = " + cursor);
         /*
         1. создать новый массив бОльшего размера (в 2 раза больше)
