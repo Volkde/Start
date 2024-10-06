@@ -1,10 +1,10 @@
-package homework_16;
+package lesson_16;
 
-public class MagicArrayHW {
-    int[] array;
-    int cursor; // присвоено значение по умолчанию = 0;
+public class MagicArray {
+    private int[] array;
+    private int cursor; // присвоено значение по умолчанию = 0;
 
-    public MagicArrayHW() {
+    public MagicArray() {
         array = new int[10];
     }
 
@@ -34,7 +34,7 @@ public class MagicArrayHW {
 
 
     // Динамическое расширение массива
-    void expandArray() {
+    private void expandArray() {
         System.out.println("Расширяем массив! Курсор = " + cursor);
         /*
         1. создать новый массив бОльшего размера (в 2 раза больше)
@@ -85,43 +85,45 @@ public class MagicArrayHW {
     }
 
     // Удаление элемента по индексу
-//    int remove(int index) {
-//        /*
-//        1. Проверка индекса на валидность
-//        2. Удалить значение по индексу
-//        3. Передвинуть курсор (т.к. кол-во элементов уменьшилось)
-//        4. Вернуть старое значение
-//        */
-//        //Todo реализовать
-//        return -1;
-//    }
+    int remove(int index) {
 
-    int indexOf(int value) {
-        for (int i = 0; i < cursor; i++) {
-            if (array[i] == value) {
+        if (array == null && array[index] < 0 && index > array.length - 1) {
+            return -1;
+        }
+        int[] newArray = new int[array.length - 1];
+
+        int i = 0;
+        while (i < array.length - 1) {
+            if (i == index) {
+                newArray[i - 1] = array[i + 1];
+                i++;
+                continue;
+            }
+            newArray[i] = array[i];
+
+
+
+        /*
+        1. Проверка индекса на валидность
+        2. Удалить значение по индексу
+        3. Передвинуть курсор (т.к. кол-во элементов уменьшилось)
+        4. Вернуть старое значение
+        */
+            //Todo реализовать
+            return -1;
+        }
+        return array[index];
+    }
+
+
+    public int getArray(int ellem) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == ellem) {
                 return i;
             }
         }
         return -1;
     }
-
-    int remove(int index) {
-        if (index >=0 && index < cursor) {
-            int removedValue = array[index];
-            for (int i = index; i < cursor - 1; i++) {
-                array[i] = array[i + 1];
-            }
-            cursor--;
-            return removedValue;
-        }
-        return -1;
-    }
-
-
-
-
-
-
 }
 
 /*
