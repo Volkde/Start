@@ -5,7 +5,7 @@ package lesson_16;
 public class TestArray {
     public static void main(String[] args) {
 
-        MagicArray magicArray = new MagicArray();
+        magicarray magicArray = new magicarray();
 
         System.out.println(magicArray.toString());
 

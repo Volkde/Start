@@ -1,4 +1,4 @@
-package lesson_16;
+package homework_16;
 
 public class MagicArray {
     private int[] array;
