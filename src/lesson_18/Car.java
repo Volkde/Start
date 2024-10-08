@@ -30,4 +30,7 @@ public class Car {
         System.out.println("Hello from static method");
     }
 
+    public void setPowerPS(int i) {
+
+    }
 }
