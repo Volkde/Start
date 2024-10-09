@@ -1,10 +1,10 @@
-package homework_19;
+/**package homework_19;
 
 /**
  * @author Sergey Bugaenko
  * {@code @date} 08.10.2024
- */
-/*
+
+
 Task 1
 Класс "Калькулятор"
 Создайте класс Calculator, который будет предоставлять
@@ -13,7 +13,7 @@ Task 1
 Класс должен содержать:
 
 Статические методы для каждой математической операции, принимающие два аргумента и возвращающие результат операции.
- */
+
 
 public class Calculator {
 
@@ -72,7 +72,6 @@ public class Calculator {
 
         private final int x;
         private final int y;
-
         public ImmutablePoint(int x, int y) {
             this.x = x;
             this.y = y;
@@ -111,3 +110,4 @@ public class Calculator {
     }
 
 }
+*/

@@ -1,9 +1,9 @@
-package homework_19;
+/**package homework_19;
 
 /**
  * @author Sergey Bugaenko
  * {@code @date} 08.10.2024
- */
+
 
 public class CalculatorApp {
     public static void main(String[] args) {
@@ -20,3 +20,4 @@ public class CalculatorApp {
 
     }
 }
+*/
