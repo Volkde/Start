@@ -18,20 +18,20 @@ package homework_23;
 
 
 
-            Warrior warrior = new Warrior();
-            warrior.attack();
+           // Warrior warrior = new Warrior();
+            // warrior.attack();
 
-            Mage mage = new Mage();
-            mage.attack();
+            //Mage mage = new Mage();
+            //mage.attack();
 
-            Archer archer = new Archer();
-            archer.attack();
+            //Archer archer = new Archer();
+            //archer.attack();
 
-            Dwarf dwarf = new Dwarf();
-            dwarf.attack();
+            //Dwarf dwarf = new Dwarf();
+            //dwarf.attack();
 
-            Necromancer necromancer = new Necromancer();
-            necromancer.attack();
+            //Necromancer necromancer = new Necromancer();
+            // necromancer.attack();
 
 
 
