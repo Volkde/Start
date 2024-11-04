@@ -29,14 +29,12 @@ public class ComparatorApp {
 
 
         Arrays.sort(sportsmen, new Comparator<Sportsman>() {
-
             @Override
 
-
+            public int compare(Sportsman sportsmen1, Sportsman sportsmen2) {
+                return Integer.compare(sportsmen1.getAge(), sportsmen2.getAge());
             }
-
         });
-
         System.out.println("Сортировка по возрасту (анонимный класс Comparator):");
         System.out.println(Arrays.toString(sportsmen));
     }
