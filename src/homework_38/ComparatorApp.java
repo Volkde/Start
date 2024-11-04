@@ -31,9 +31,7 @@ public class ComparatorApp {
         Arrays.sort(sportsmen, new Comparator<Sportsman>() {
 
             @Override
-            public int compare(Sportsman sportsman1, Sportsman sportsman2) {
 
-                return Integer.compare(sportsman1.getAge(), sportsman2.getAge());
 
             }
 
