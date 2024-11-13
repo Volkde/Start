@@ -38,7 +38,6 @@ public class ValidateApp {
         } catch (PasswordValidateException e) {
             // password не прошел проверку.
             // Запросить у пользователя другой ввод
-            System.out.println("Password is not valid");
             String message = e.getMessage();
             System.out.println(message);
         }
